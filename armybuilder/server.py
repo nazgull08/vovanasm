@@ -31,14 +31,11 @@ print("⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿")
 print("")
 
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+def list_units():
+    return render_template('list_units.html')
 
-@app.route('/hello/')
-@app.route('/hello/<name>')
-def hello(name=None):
-    return render_template('hello.html', name=name)
-
+@app.route('/necrons/')
+def ()
 
 @app.route('/unit/')
 @app.route('/unit/<name>')
